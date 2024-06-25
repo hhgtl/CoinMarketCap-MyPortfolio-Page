@@ -1,0 +1,126 @@
+.portfolio {
+  padding: 24px;
+  width: 1580px;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.name__portfolio__wrapper {
+  display: flex;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: red;
+    border-radius: 50%;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  p {
+    font-size: 16px;
+    color: #616e85;
+    font-weight: 500;
+    line-height: 150%;
+    margin-left: 8px;
+  }
+}
+.total__balance__wrapper {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  .total__balance {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+  }
+}
+
+.change__total__balance__wrapper {
+  margin-top: 4px;
+  span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #16c784;
+  }
+}
+
+.header__chartBox__item__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.show__charts__btn {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  span {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(34, 37, 49);
+    margin-right: 12px;
+  }
+  button {
+    width: 40px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+.addTransaction__btn__wrapper {
+  margin-right: 16px;
+  button {
+    width: 138px;
+    height: 32px;
+    background-color: #3861fb;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      background-color: #456eff;
+    }
+  }
+}
+.popup__menu__wrapper {
+  background-color: #eff2f5;
+  border-radius: 7px;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0;
+    padding-bottom: 7px;
+    cursor: pointer;
+  }
+}
+
+.main {
+  width: 1532px;
+}

@@ -1,0 +1,41 @@
+.portfolio__card {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.active {
+  background-color: #eff2f5;
+  &:hover {
+    background-color: #f7f7f8;
+  }
+}
+.img__wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: aqua;
+  margin-right: 8px;
+  span {
+    margin-top: -4px;
+  }
+}
+.title {
+  line-height: 21px;
+  font-weight: 700;
+  font-size: 14px;
+  color: black;
+  max-width: 250px;
+}
+.full__price {
+  font-size: 12px;
+  font-weight: 600;
+  color: #58667e;
+  line-height: 18px;
+}
