@@ -1,6 +1,7 @@
 .portfolio {
   padding: 24px;
-  width: 1580px;
+  max-width: 1580px;
+  width: 100%;
 }
 .header {
   display: flex;
@@ -119,8 +120,4 @@
     padding-bottom: 7px;
     cursor: pointer;
   }
-}
-
-.main {
-  width: 1532px;
 }
