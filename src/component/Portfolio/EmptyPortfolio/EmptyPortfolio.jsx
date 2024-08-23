@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './EmptyPortfolio.module.scss';
-const EmptyPortfolio = () => {
+const EmptyPortfolio = ({ toggleMenuIsVisible }) => {
   return (
     <div className={style.emptyPortfolio__wrapper}>
       <img
@@ -9,7 +9,7 @@ const EmptyPortfolio = () => {
       />
       <div className={style.title__text}>This portfolio needs some final touches…</div>
       <div className={style.desc}>Add a coin to get started</div>
-      <button>+ Add Transaction</button>
+      <button onClick={() => toggleMenuIsVisible('selectCoin')}>+ Add Transaction</button>
     </div>
   );
 };

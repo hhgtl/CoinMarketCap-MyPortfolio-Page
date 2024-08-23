@@ -13,23 +13,19 @@
 }
 .name__portfolio__wrapper {
   display: flex;
-  div {
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 24px;
     height: 24px;
-    background-color: red;
+    font-size: 12px;
     border-radius: 50%;
-
-    span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 12px;
-      height: 12px;
-    }
   }
+
   p {
     font-size: 16px;
     color: #616e85;

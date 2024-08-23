@@ -1,0 +1,60 @@
+.Modal__title__wrapper {
+  position: relative;
+  width: 500px;
+  height: 238px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding-bottom: 32px;
+  box-shadow: 0px 8px 32px 0px rgba(128, 138, 157, 0.24), 0px 1px 2px 0px rgba(128, 138, 157, 0.12);
+}
+
+.Modal__title {
+  width: 100%;
+  padding: 40px 32px 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.Modal__crossIcon__Wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.Add__body__wrapper {
+  width: 500px;
+  height: 118px;
+  padding: 0 32px;
+}
+.Add__transaction__wrapper {
+  display: flex;
+  border: 1px solid #eff2f5;
+  padding: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  &:hover {
+    background-color: #f8fafd;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+    margin-bottom: 8px;
+  }
+}
+.Main__text__wrapper {
+  width: 322px;
+  height: 68px;
+}
+.Main__title__text {
+  line-height: 26px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.Main__desc__text {
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(97, 110, 133);
+}

@@ -1,31 +1,35 @@
 import React from 'react';
 import style from './ModalCreatePortfolio.module.scss';
-import cross from '../../img/cross.svg';
-const ModalCreatePortfolio = ({ toggleModalCreatePortfolio }) => {
-  return (
-    <div className={style.ModalCreatePortfolio__Wpapper}>
-      <div className={style.Modal__title__wrapper}>
-        <div className={style.Modal__title}>Create Portfolio</div>
-        <div className={style.Modal__crossIcon__Wrapper} onClick={toggleModalCreatePortfolio}>
-          <img src={cross} alt="cross" />
-        </div>
-        <div className={style.Add__body__wrapper}>
-          <div className={style.Add__transaction__wrapper}>
-            <img
-              src="https://s2.coinmarketcap.com/static/cloud/img/portfolio/manual.svg?_=18ab4b3"
-              alt="cursor"
-            />
-            <div className={style.Main__text__wrapper}>
-              <div className={style.Main__title__text}>Add Transactions Manually</div>
-              <div className={style.Main__desc__text}>
-                Enter all transaction details at your own pace to track your portfolio.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+import StartMenu from './StartMenu/StartMenu';
+import ChangeAvatarContainer from './ChangeAvatar/ChangeAvatarContainer';
+import CreatePorfolioMenuContainer from './CreatePorfolioMenu/CreatePorfolioMenuContainer';
+import SelectCoinMenuContainer from './SelectCoinMenu/SelectCoinMenuContainer';
+import AddTransactionContainer from './AddTransaction/AddTransactionContainer';
+const ModalCreatePortfolio = ({
+  toggleMenuIsVisible,
+  startMenuIsVisible,
+  createPortfolioMenuIsVisible,
+  changeAvatarMenuIsVisible,
+  selectCoinMenuIsVisible,
+  addTransactionMenuIsVisible,
+  dateAndTimeMenuIsVisible,
+}) => {
+  let renderMenu;
+  if (startMenuIsVisible) {
+    renderMenu = <StartMenu toggleMenuIsVisible={toggleMenuIsVisible} />;
+  } else if (createPortfolioMenuIsVisible) {
+    renderMenu = <CreatePorfolioMenuContainer toggleMenuIsVisible={toggleMenuIsVisible} />;
+  } else if (changeAvatarMenuIsVisible) {
+    renderMenu = <ChangeAvatarContainer toggleMenuIsVisible={toggleMenuIsVisible} />;
+  } else if (selectCoinMenuIsVisible) {
+    renderMenu = <SelectCoinMenuContainer />;
+  } else if (addTransactionMenuIsVisible || dateAndTimeMenuIsVisible) {
+    renderMenu = <AddTransactionContainer />;
+  } else {
+    renderMenu = null;
+  }
+
+  return <div className={style.modalCreatePortfolio__Wpapper}>{renderMenu}</div>;
 };
 
 export default ModalCreatePortfolio;

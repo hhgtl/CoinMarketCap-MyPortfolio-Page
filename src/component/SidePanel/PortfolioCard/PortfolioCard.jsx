@@ -1,9 +1,18 @@
 import React from 'react';
 import style from './PortfolioCard.module.scss';
 
-const PortfolioCard = ({ portfolioDescr, totalBalance }) => {
+const PortfolioCard = ({
+  id,
+  portfolioDescr,
+  totalBalance,
+  selectedPortfolio,
+  selectPortfolio,
+}) => {
+  const portfolioActive = selectedPortfolio
+    ? `${style.portfolio__card} ${style.active}`
+    : `${style.portfolio__card}`;
   return (
-    <div className={`${style.portfolio__card} ${style.active}`}>
+    <div className={portfolioActive} onClick={() => selectPortfolio(id)}>
       <div className={style.img__wrapper} style={{ backgroundColor: portfolioDescr.color }}>
         <span>{portfolioDescr.img}</span>
       </div>

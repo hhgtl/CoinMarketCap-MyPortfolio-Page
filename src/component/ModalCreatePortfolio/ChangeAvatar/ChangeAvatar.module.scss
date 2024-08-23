@@ -1,0 +1,56 @@
+.changeAvatar__wrapper {
+  width: 520px;
+  height: 554px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  padding: 40px 32px 16px;
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  div {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+}
+.body {
+  width: 468px;
+  margin: 0 auto;
+}
+.avatar__wrapper {
+  margin: 0 auto;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 72px;
+  background-color: #967f7f;
+  span {
+    font-size: 32px;
+  }
+}
+
+.changeColor__wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0 32px;
+}
+.subTitle {
+  color: rgb(128, 138, 157);
+  line-height: 18px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 13px;
+}
+.emojis__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

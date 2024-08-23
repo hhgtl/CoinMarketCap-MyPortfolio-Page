@@ -1,0 +1,54 @@
+.selectCoinMenu__wrapper {
+  width: 496px;
+  height: 534px;
+  background-color: #ffff;
+  border-radius: 16px;
+}
+.header {
+  padding: 16px 32px 0;
+}
+.title__wrapper {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.body {
+  width: 496px;
+  height: 464px;
+  padding: 0 32px 32px;
+}
+.searchPanel {
+  width: 432px;
+  height: 32px;
+  padding: 0 16px 0 14px;
+  border-color: #eff2f5;
+  background-color: #eff2f5;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+.coinList__menu {
+  height: 370px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}

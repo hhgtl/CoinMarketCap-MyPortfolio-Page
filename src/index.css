@@ -17,3 +17,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+:root {
+  --fc-border-color: rgb(0, 0, 0);
+  --fc-daygrid-event-dot-width: 5px;
+}

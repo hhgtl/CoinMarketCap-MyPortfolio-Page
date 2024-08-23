@@ -1,0 +1,147 @@
+.dataAndTimeMenu__wrapper {
+  width: 496px;
+  height: 497px;
+  background-color: #fff;
+  border-radius: 16px;
+  .header {
+    width: 496px;
+    height: 71px;
+    padding: 16px 32px 0;
+    display: flex;
+    align-items: center;
+    button {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      img {
+        height: 13px;
+        margin-right: 8px;
+        margin-top: 2.9px;
+      }
+    }
+    .header__title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .line__row {
+    width: 416px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: rgb(239, 242, 245);
+    margin: 8px 40px;
+  }
+  .selectTime__wrapper {
+    width: 432px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 255px;
+
+    .time__text {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .selectedTime {
+      display: flex;
+      font-weight: 500;
+      justify-content: center;
+      align-items: center;
+      width: 102px;
+      height: 38px;
+      padding: 8px;
+      background: rgb(239, 242, 245);
+      border-radius: 8px;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+  .selectTimeMenu__wrapper {
+    position: relative;
+    left: 370px;
+    bottom: 290px;
+    z-index: 1000;
+    width: 85px;
+    .selectTimeMenu__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .selectTimeMenu {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        border: 1px solid rgb(207, 214, 228);
+        background-color: #fff;
+        &.active {
+          visibility: visible;
+          display: block;
+          width: 85px;
+          height: 237px;
+        }
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 73px;
+          height: 22px;
+          margin: 8px 5px 0px;
+          font-size: 15px;
+          font-weight: 600;
+        }
+        ul {
+          width: 83px;
+          height: 206px;
+          list-style-type: none;
+          overflow: scroll;
+          scrollbar-width: none;
+          li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 85px;
+            height: 30px;
+            padding: 5px 10px;
+            &:hover {
+              background-color: #f0f0f0;
+            }
+            &.deactivate {
+              color: #cdcdcd;
+            }
+          }
+        }
+      }
+      img {
+        width: 14px;
+      }
+    }
+  }
+  .changeDataBtn {
+    position: relative;
+    bottom: 220px;
+    left: 32px;
+    width: 432px;
+    height: 48px;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: rgb(56, 97, 251);
+    border: 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background: #3459e7;
+    }
+    &.active {
+      position: static;
+      margin-left: 32px;
+      margin-top: 29px;
+    }
+  }
+}

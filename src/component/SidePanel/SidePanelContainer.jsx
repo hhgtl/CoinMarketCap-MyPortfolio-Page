@@ -1,7 +1,8 @@
 import React from 'react';
 import SidePanel from './SidePanel';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleModalCreatePortfolio } from '../../redux/modalSlice';
+import { toggleMenuIsVisible } from '../../redux/modalSlice';
+import { selectPortfolio } from '../../redux/portfolioSlice';
 
 const SidePanelContainer = () => {
   const portfolioData = useSelector((state) => state.portfolioData);
@@ -9,7 +10,8 @@ const SidePanelContainer = () => {
   return (
     <SidePanel
       portfolioData={portfolioData.portfolio}
-      toggleModalCreatePortfolio={() => dispatch(toggleModalCreatePortfolio())}
+      toggleMenuIsVisible={() => dispatch(toggleMenuIsVisible({ modalType: 'startMenu' }))}
+      selectPortfolio={(id) => dispatch(selectPortfolio({ id }))}
     />
   );
 };

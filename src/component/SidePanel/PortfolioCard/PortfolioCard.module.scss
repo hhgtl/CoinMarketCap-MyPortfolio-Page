@@ -6,6 +6,9 @@
   border-radius: 8px;
   margin-top: 4px;
   cursor: pointer;
+  &:hover {
+    background-color: #f8fafd;
+  }
 }
 .active {
   background-color: #eff2f5;

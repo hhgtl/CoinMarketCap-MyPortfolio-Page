@@ -1,0 +1,20 @@
+.colorCircle__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  margin: 0 4px;
+  border-radius: 16px;
+  &:hover {
+    border: 2px solid #3861fb;
+  }
+}
+.active {
+  border: 2px solid #3861fb;
+}
+.colorCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 16px;
+}

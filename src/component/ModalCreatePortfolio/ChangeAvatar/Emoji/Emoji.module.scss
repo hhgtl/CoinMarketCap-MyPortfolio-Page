@@ -1,0 +1,13 @@
+.emojis__item {
+  width: 66.83px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  padding: 16px;
+  cursor: pointer;
+  &:hover {
+    font-size: 36px;
+  }
+}
