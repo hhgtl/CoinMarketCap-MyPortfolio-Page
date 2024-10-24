@@ -2,6 +2,34 @@
   padding: 24px;
   max-width: 1580px;
   width: 100%;
+  .main {
+    .switchesMenu__wrapper {
+      margin-top: 40px;
+      margin-bottom: 24px;
+      .switchesMenuBtn {
+        button {
+          z-index: 1;
+          padding: 0 16px 12px;
+          background-color: transparent;
+          border: none;
+          line-height: 150%;
+          font-weight: 600;
+          font-size: 14px;
+          color: #616e85;
+          cursor: pointer;
+          &.active {
+            color: #0d1421;
+            border-bottom: #0a93e2 2px solid;
+          }
+        }
+      }
+      hr {
+        margin: 0;
+        color: #eff2f5;
+        border-top: 1px solid #eff2f5;
+      }
+    }
+  }
 }
 .header {
   display: flex;

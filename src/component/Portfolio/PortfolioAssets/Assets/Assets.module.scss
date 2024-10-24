@@ -1,0 +1,81 @@
+table {
+  width: 100%;
+  border-bottom: 1px solid #eff2f5;
+  tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eff2f5;
+    .statsTopContainer {
+      text-align: center;
+      text-align: end;
+      height: 47px;
+    }
+    .statsBottomContainer {
+      height: 80px;
+      text-align: end;
+      .coinLogo {
+        margin-right: 6px;
+        width: 24px;
+        height: 24px;
+      }
+      .coinName {
+        margin-right: 6px;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .coinSymbol {
+        text-transform: uppercase;
+        color: rgb(128, 138, 157);
+        font-weight: 500;
+        font-size: 15px;
+      }
+      .statistics {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: end;
+      }
+    }
+    th {
+      padding: 11px 10px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      span {
+        font-size: 12px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          background-color: transparent;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+          &:hover {
+            background: rgb(248, 250, 253);
+          }
+        }
+        .actionBtnPlus {
+          font-size: 24px;
+          color: #808a9d;
+        }
+        .actionBtnElipsis {
+          padding-bottom: 14px;
+          font-size: 28px;
+          color: #808a9d;
+        }
+      }
+      .actionBtnContainer {
+        flex-direction: row;
+      }
+    }
+  }
+}

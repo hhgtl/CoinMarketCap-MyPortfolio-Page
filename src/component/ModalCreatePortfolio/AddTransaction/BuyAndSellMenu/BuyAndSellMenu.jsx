@@ -21,6 +21,7 @@ const BuyAndSellMenu = ({
   quantity,
   changeQuantity,
   reformattedDate,
+  setCoin,
 }) => {
   const { image, name, symbol } = selectCoin;
   const activeSelectCoinDropDownMenu = openSelectCoinWindow
@@ -41,6 +42,11 @@ const BuyAndSellMenu = ({
     if (openSelectCoinWindow) {
       toggleOpenSelectCoinWindow('close');
     }
+  };
+  const setCoinAndCloseModal = () => {
+    setCoin({ ...selectCoin, quantity, price: priceSelectCoin });
+    changeQuantity(0);
+    closeModal();
   };
   return (
     <div className={style.buyAndSellMenu__wrapper} onClick={closeSelectCoinDropDownMenu}>
@@ -95,6 +101,7 @@ const BuyAndSellMenu = ({
                 setSelectCoinAT={setSelectCoinAT}
                 selectCoinId={selectCoin.id}
                 price={coin.current_price}
+                lastUpdated={coin.last_updated}
               />
             ))}
           </div>
@@ -145,7 +152,9 @@ const BuyAndSellMenu = ({
           </p>
           <p className={style.totalSum}>$ {quantity * priceSelectCoin}</p>
         </div>
-        <button className={style.addTransactionBtn__wrapper}>Add Transaction</button>
+        <button className={style.addTransactionBtn__wrapper} onClick={setCoinAndCloseModal}>
+          Add Transaction
+        </button>
       </div>
     </div>
   );

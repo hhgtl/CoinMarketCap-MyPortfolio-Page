@@ -1,0 +1,150 @@
+.PortfolioOverview {
+  margin-bottom: 42px;
+}
+.financialStatistics {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 24px;
+  height: 107px;
+  .card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px 0px rgba(88, 102, 126, 0.12), 0px 4px 24px 0px rgba(88, 102, 126, 0.08);
+    .title {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      height: 22.5px;
+      font-size: 14px;
+      color: #616e85;
+    }
+    .coin {
+      display: flex;
+      align-items: center;
+      height: 26px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 130%;
+    }
+    .sum {
+      display: flex;
+      align-items: center;
+      height: 26px;
+      font-weight: 700;
+      font-size: 20px;
+      color: #0d1421;
+      &.positiveProfit {
+        color: #16c784;
+      }
+      &.negativeProfit {
+        color: #ea3943;
+      }
+    }
+    .profit {
+      display: flex;
+      align-items: center;
+
+      height: 22.5px;
+      margin-top: 4px;
+      &.positiveProfit {
+        color: #16c784;
+      }
+      &.negativeProfit {
+        color: #ea3943;
+      }
+    }
+  }
+}
+
+.charts__wrapper {
+  display: flex;
+  gap: 24px;
+  .chartStatistics {
+    width: 495px;
+    height: 320px;
+    padding: 24px;
+    box-shadow: 0 1px 2px 0 rgba(88, 102, 126, 0.12), 0 4px 24px 0 rgba(88, 102, 126, 0.08);
+    border-radius: 8px;
+    canvas {
+      width: 447px;
+      height: 240px;
+    }
+    .performance__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      display: flex;
+      align-items: center;
+    }
+    .performanceLineChart__wrapper {
+      width: 447px;
+      height: 248px !important;
+    }
+    .title__wrapper {
+      height: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .chartHistoryBtns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2px;
+        height: 31px;
+        width: 270px;
+        border-radius: 6px;
+        background-color: #eff2f5;
+        button {
+          padding: 4px 16px;
+          width: 54px;
+          height: 27px;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          font-weight: 600;
+          border-radius: 6px;
+          color: #616e85;
+          transition: color 0.5s;
+          &:hover {
+            color: #000;
+          }
+          &.active {
+            color: #000;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .chartPiePortfolio__container {
+    width: 495px;
+    height: 320px;
+    padding: 24px;
+    box-shadow: 0 1px 2px 0 rgba(88, 102, 126, 0.12), 0 4px 24px 0 rgba(88, 102, 126, 0.08);
+    border-radius: 8px;
+    p {
+      height: 28px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .chartPiePortfolio {
+      width: 446px;
+      height: 248px;
+    }
+  }
+  .chartHistory {
+    width: 447px;
+    height: 248px !important;
+  }
+}

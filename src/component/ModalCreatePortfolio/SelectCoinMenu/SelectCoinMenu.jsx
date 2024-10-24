@@ -25,6 +25,7 @@ const SelectCoinMenu = ({ coinList, toggleMenuIsVisible, setSelectCoinAT }) => {
               setSelectCoinAT={setSelectCoinAT}
               toggleMenuIsVisible={toggleMenuIsVisible}
               price={coinObj.current_price}
+              lastUpdated={coinObj.last_updated}
             />
           ))}
         </div>

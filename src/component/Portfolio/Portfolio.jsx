@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './Portfolio.module.scss';
-// import eyeHide from '../../img/eyeHide.svg';
-import eyeOpen from '../../img/eyeOpen.svg';
 import EmptyPortfolio from './EmptyPortfolio/EmptyPortfolio';
+import PortfolioOverviewContainer from './PortfolioOverview/PortfolioOverviewContainer';
+import PortfolioAssetsContainer from './PortfolioAssets/PortfolioAssetsContainer';
 const Portfolio = ({ portfolioData, toggleMenuIsVisible }) => {
   const { name, img, color } = portfolioData.portfolioDescr;
   const { totalBalance } = portfolioData;
@@ -16,7 +16,6 @@ const Portfolio = ({ portfolioData, toggleMenuIsVisible }) => {
           </div>
           <div className={style.total__balance__wrapper}>
             <div className={style.total__balance}>${totalBalance}</div>
-            <img src={eyeOpen} alt="Open eye" />
           </div>
           <div className={style.change__total__balance__wrapper}>
             <span>$0 (24h)</span>
@@ -36,7 +35,15 @@ const Portfolio = ({ portfolioData, toggleMenuIsVisible }) => {
         </div>
       </div>
       <div className={style.main}>
-        <EmptyPortfolio toggleMenuIsVisible={toggleMenuIsVisible} />
+        <div className={style.switchesMenu__wrapper}>
+          <div className={style.switchesMenuBtn}>
+            <button className={style.active}>Overview</button>
+          </div>
+          <hr />
+        </div>
+        <PortfolioOverviewContainer />
+        <PortfolioAssetsContainer />
+        {/* <EmptyPortfolio toggleMenuIsVisible={toggleMenuIsVisible} /> */}
       </div>
     </div>
   );

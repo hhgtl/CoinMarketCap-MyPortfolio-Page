@@ -2,6 +2,7 @@ import React from 'react';
 import BuyAndSellMenu from './BuyAndSellMenu';
 import { useDispatch, useSelector } from 'react-redux';
 import { changePriceSelectCoin, changeQuantity } from '../../../../redux/modalAddTransactionSlice';
+import { setCoin } from '../../../../redux/portfolioSlice';
 
 const BuyAndSellMenuContainer = ({
   toggleAddTransferMenu,
@@ -33,6 +34,7 @@ const BuyAndSellMenuContainer = ({
       quantity={quantity}
       changeQuantity={(quantity) => dispatch(changeQuantity({ quantity }))}
       reformattedDate={reformattedDate}
+      setCoin={(coin) => dispatch(setCoin({ coin }))}
     />
   );
 };
